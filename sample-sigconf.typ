@@ -28,3 +28,6 @@
 
 = Related Work
 #lorem(200)
+
+= Future Work
+#lorem(300)

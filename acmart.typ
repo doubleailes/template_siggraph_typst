@@ -236,7 +236,7 @@
   })
 
   // Display the paper's title.
-  align(center, text(font: "Linux Biolinum", size: 2.1em, [* #title *]))
+  align(center, text(font: "Libertinus Serif", size: 2.1em, [* #title *]))
   
   // Display the authors list.
   for i in range(calc.ceil(authors.len() / 3)) {
@@ -273,7 +273,7 @@
 
   // 12pt leading, i.e. 1.2x font-size (rule 3)
   set par(justify: true, first-line-indent: 1em, leading: spacing)
-  show par: set block(spacing: spacing)
+  set par(spacing: spacing)
 
   // copyright footer
   set footnote.entry(separator: line(length: 100%, stroke: 0.5pt))
