@@ -15,7 +15,7 @@
     email: "other.email@provice.com"),
   ),
   main-fig: (
-    captions: "A vue of Annecy Lake from a former Hospital",
+    captions: "A vue of Annecy's Lake from a former Hospital",
     path: "Images\annecy_lake.jpg",
   ),
   conference: (

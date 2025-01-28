@@ -140,7 +140,7 @@
 
   main-fig:(
     path: none,
-    captions: none
+    captions: none,
   ),
 
   // The paper's abstract. Can be omitted if you don't have one.
@@ -285,13 +285,15 @@
   }
 
   // Add figure if path exists
-  if main-fig.path != none {
+  if (main-fig.path != none) and (main-fig.captions != none) {
     figure(
       image(main-fig.path, width: 100%),
       caption: [
         #main-fig.captions
       ],
-)
+    )
+  } else if (main-fig.path != none) and (main-fig.captions == none) {
+    image(main-fig.path, width: 100%)
   }
 
   // Start two column mode and configure paragraph properties.
