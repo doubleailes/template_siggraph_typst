@@ -14,7 +14,18 @@
     city: "Somewhere",
     email: "other.email@provice.com"),
   ),
-  abstract: "A sample abstract",
+  main-fig: (
+    captions: "A vue of Annecy Lake from a former Hospital",
+    path: "Images\annecy_lake.jpg",
+  ),
+  conference: (
+    name: [Special Interest Group on Computer Graphics and Interactive Techniques Conference Talks],
+    short: [SIGGRAPH Talks '25],
+    year: [2025],
+    date: [August 10-16],
+    venue: [Vancover, BC, Canada],
+  ),
+  abstract: [#lorem(120)],
 
 )
 = Introduction

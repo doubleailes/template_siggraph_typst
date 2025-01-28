@@ -107,6 +107,17 @@
   ]
 }
 
+#let main-figure(p: none, c: none) = {
+  if path != none {
+    figure(
+      image(path, width: 100%),
+      caption: [
+        captions
+      ],
+)
+  }
+}
+
 // This function gets your whole document as its `body` and formats
 #let acmart(
   // The paper's title.
@@ -125,6 +136,11 @@
       location: [Hong Kong],
       email: "jlhu@cse.cuhk.edu.hk"
     ),
+  ),
+
+  main-fig:(
+    path: none,
+    captions: none
   ),
 
   // The paper's abstract. Can be omitted if you don't have one.
@@ -266,6 +282,16 @@
     if not is-last {
       v(1.6em, weak: true)
     }
+  }
+
+  // Add figure if path exists
+  if main-fig.path != none {
+    figure(
+      image(main-fig.path, width: 100%),
+      caption: [
+        #main-fig.captions
+      ],
+)
   }
 
   // Start two column mode and configure paragraph properties.
