@@ -42,3 +42,6 @@
 
 = Future Work
 #lorem(300)
+
+== A closer look
+#lorem(300)

@@ -196,13 +196,23 @@
   set text(font: "Libertinus Serif", size: 10pt)
   let spacing = 0.55em
 
+  let conf_short = [#conference.short, #conference.date, #conference.year, #conference.venue] // conference.short
   // Configure the page. (rule 2)
   // Text block: 178 x 229 mm (7 x 9 in)
   // US letter: 8½″ × 11″ (216 mm × 279 mm)
   // A4: 210 mm × 297 mm (8.3″ × 11.7″)
   set page(
+    numbering: "1",
     paper: "us-letter",
     margin: (x: (8.5 - 7) / 2 * 1in, y: (11 - 9) / 2 * 1in),
+    header: context {
+      let num = counter(page).get().first() // thanks to @PgBiel
+      if calc.odd(num) and num != 1 {
+        title; h(1fr); conf_short
+      } else if num != 1 {
+        conf_short ; h(1fr); anon(authors.map(author => if authors.last() == author { "and " } else { } + author.name).join(", ") + [.])
+      }
+    }
   )
 
   // Configure equation numbering and spacing.
@@ -357,7 +367,7 @@
     #conference.year
     #title.
     In _ #conference.name (#conference.short), #conference.date, #conference.year, #conference.venue. _
-    ACM, New York, NY, USA, #counter(page).display() pages.
+    ACM, New York, NY, USA, #context counter(page).display() pages.
     #copyright.doi
   ]
 
