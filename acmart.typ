@@ -367,7 +367,7 @@
     #conference.year
     #title.
     In _ #conference.name (#conference.short), #conference.date, #conference.year, #conference.venue. _
-    ACM, New York, NY, USA, #context counter(page).display() pages.
+    ACM, New York, NY, USA, #context{counter(page).final().first()} pages.
     #copyright.doi
   ]
 
