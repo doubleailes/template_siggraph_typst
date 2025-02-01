@@ -21,13 +21,13 @@ Like in the sample, you can use the `sigconf` class to create your paper.
 You need to import the `sigconf.typ` in your document.
 
 ```typst
-import sigconf.typ
+#import sigconf.typ
 ```
 
 Afterwards, you can use the `sigconf` class to create your paper.
 
 ```typst
-import "sigconf.typ": acmart
+#import "sigconf.typ": acmart
 #show: acmart.with(
     title = "Title",
     author = "Author",
