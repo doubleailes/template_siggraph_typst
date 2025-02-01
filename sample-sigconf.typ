@@ -16,7 +16,7 @@
   ),
   main-fig: (
     captions: "A vue of Annecy's Lake from a former Hospital",
-    path: "Images\annecy_lake.jpg",
+    path: "Images/annecy_lake.jpg",
   ),
   conference: (
     name: [Special Interest Group on Computer Graphics and Interactive Techniques Conference Talks],
