@@ -35,7 +35,7 @@
 #lorem(140)
 
 == Problem Statement
-#lorem(50)
+#lorem(50) @annecylake
 
 = Related Work
 #lorem(200)
@@ -45,3 +45,5 @@
 
 == A closer look
 #lorem(300)
+
+#bibliography("basic.yml")
