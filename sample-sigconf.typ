@@ -1,5 +1,5 @@
-#import "sigconf.typ": acmart
-#show: acmart.with(
+#import "sigconf.typ": sigconf
+#show: sigconf.with(
   title: "A sample title",
   subtitle: "A sample subtitle",
   authors: (

@@ -119,7 +119,7 @@
 }
 
 // This function gets your whole document as its `body` and formats
-#let acmart(
+#let sigconf(
   // The paper's title.
   title: "Paper Title",
   
