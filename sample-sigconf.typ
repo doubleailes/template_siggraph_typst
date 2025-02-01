@@ -1,4 +1,4 @@
-#import "acmart.typ": acmart
+#import "sigconf.typ": acmart
 #show: acmart.with(
   title: "A sample title",
   subtitle: "A sample subtitle",
