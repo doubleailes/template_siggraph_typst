@@ -345,7 +345,7 @@
     *
     _CCS Concepts:_ 
     #ccs-concepts.map(concept => 
-      [ #sym.bullet #concept.generic #sym.arrow.r #concept.specific.join("; ")]
+      [ #sym.bullet #concept.generic #sym.tilde #concept.specific.join("~")]
     ).join("; ").
     *
   ]
