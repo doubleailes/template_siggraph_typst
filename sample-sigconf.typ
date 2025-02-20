@@ -5,13 +5,13 @@
   authors: (
     (name: "Louis Bourbon",
     department: "Computer Science",
-    institution: "University of Somewhere",
-    city: "Somewhere",
+    organization: "University of Somewhere",
+    location: "Somewhere",
     email: "some.email@provider.com"),
     (name: "Huge Capet",
     department: "Computer Science",
-    institution: "University of Somewhere",
-    city: "Somewhere",
+    organization: "University of Somewhere",
+    location: "Somewhere",
     email: "other.email@provice.com"),
   ),
   main-fig: (
